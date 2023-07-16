@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.main-content{
+    display: grid;
+    min-height: 1000px;
+    width: 90%;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 300px 700px;
+    margin: 20px auto; 
+
+}
+
+.left-section{
+    grid-area: 1/1/3/2;
+    grid-column: span 1; 
+    background-color: rgb(207, 203, 203);
+}
+
+.right-section{
+    grid-area: 1/2/3/3;
+grid-column: span 1 / span 2;
+background-color: antiquewhite;
+}
+
+.left-content{
+    padding: 1rem;
+}
+
+.profile-image img{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02px;
+    text-transform: uppercase;
+    padding: 0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.icon{
+    text-align: center;
+    letter-spacing: 1rem;
+}
+.skill{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+    background-color: aliceblue;
+}
+.contact{
+  text-align: center;
+  padding: 1rem;
+ 
+ 
+}
+.social-contact{
+    display: flex;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    
+}
+.right-section{
+    padding: 2rem 3rem 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.para{
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:673px){
+    .main-content{
+   grid-template-columns: repeat(1,1fr);
+    }
+}
